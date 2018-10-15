@@ -1,0 +1,42 @@
+/* pages/self/self.wxss */
+.title{
+  text-align: center;
+  font-size: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+.subhead{
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+.idxVideo{
+  width: 100%;
+}
+.head{
+  margin: 10px auto 20px;
+}
+.profile{
+  padding: 0 5% 5vw;
+  font-size: 16px;
+  color: #666;
+}
+.swiper {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 35vh;
+  width: 100%;
+}
+.imageBox{
+  display: block;
+  height: 35vh;
+  width: 90%;
+}

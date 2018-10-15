@@ -1,0 +1,42 @@
+
+
+/*  Flex  */
+.dF{
+  display: -webkit-flex;
+  display: -ms-flexbox; 
+  display: flex;
+}
+
+
+
+/**app.wxss**/
+.Container {
+  height: 100%;
+  width: 100;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;  
+}
+
+.AStage{
+  text-indent: 2em;
+  text-align: left;
+  font-size: 18px;
+}
+
+
+.idxIBox{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.idxImg{
+  width: 90%;
+  margin-top: 5px;
+}
+.Gren_theme{
+  color:#00C58F;
+}

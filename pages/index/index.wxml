@@ -1,0 +1,35 @@
+<!--pages/index/index.wxml-->
+<view class='yinYue {{muStyle}}' bindtap='music'>
+  <image src='../../images/music.png' mode='aspectFit' class='yinImg'></image>
+</view>
+<scroll-view class='Container dF'>
+  <!-- bannerImages start " -->
+  <swiper class="swiper" bindtap='show' indicator-dots autoplay circular current='1' interval="5000" duration="1000" indicator-color='#999' indicator-active-color="#00C58F" display-multiple-items='1'>
+    <block wx:for="{{banner}}">
+    <swiper-item class="huaBox">
+      <view class='imageBox'>
+       <image src="{{item.thumb}}" class="bimage"/>
+      </view>
+    </swiper-item>
+    </block>
+  </swiper>
+    <!-- bannerImages end -->
+
+  <block wx:for="{{goods_list}}">
+    <view>
+      <view class='sbt Gren_theme'>{{item.c_name}}</view>
+      <scroll-view scroll-x='true' class='sbanner dF'>
+        <!-- <swiper class="swiper" bindtap='show' autoplay="true" interval="5000" duration="1000">
+        </swiper> -->
+        <view style="width:{{banner.length*46+'vw'}}; padding-left: 2vw" class='sbimgbox'>
+          <block wx:for="{{item.goods}}">
+            <navigator class='simgBox' url="../details/details{{appId}}&id={{item.id}}">
+              <image src="{{item.g_thumb}}" class="simg" mode=''/>
+              <text class='stext'>{{item.g_name}}</text>
+            </navigator>
+          </block>
+        </view>
+      </scroll-view>
+    </view>
+  </block>
+</scroll-view>

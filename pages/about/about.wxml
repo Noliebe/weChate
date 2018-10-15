@@ -1,0 +1,24 @@
+  <!-- pages/about/about -->
+<scroll-view class='Container dF'>
+  <map class='aboutMap' latitude='{{aa}}' longitude='{{a}}' markers="{{mapData}}"></map>
+  <view class="qbdd dF">
+    <span class="font_14">{{com_addr}}</span>
+    <text class='Gren_theme' bindtap='go'>点击导航</text>
+  </view>
+  <view class="qbdd dF">
+    <span class="font_14">{{com_phone}}</span>
+    <text class='Gren_theme' bindtap='callFirm'>点击拨打</text>
+  </view>
+  <view class="qbdd dF">
+    <span class="font_14">{{com_mobile}}</span>
+    <text class='Gren_theme' bindtap='callMe'>点击拨打</text>
+  </view>
+  <view class="qbdd dF">
+    <span class="font_14">{{com_weixin}}</span>
+    <text class='Gren_theme' bindtap='copyText'>点击复制</text>
+  </view>
+  <view class="qbdd dF">
+    <span class="font_14">{{com_url}}</span>
+    <text class='Gren_theme' bindtap='copyUrl'>点击复制</text>
+  </view>
+</scroll-view>

@@ -1,0 +1,28 @@
+<!--pages/self/self.wxml-->
+<view>
+  <view class='head'>
+    <view class='title'>{{com_name}}</view>
+    <view class='subhead'>{{com_name_en}}</view>
+  </view>
+  <view class='AStage profile'>{{content}}</view>
+</view>
+<view class="section tc">
+  <video class='idxVideo' id="myVideo" src="{{embed}}" controls poster=''>
+  </video>
+</view>
+<swiper class="swiper" bindtap='show' autoplay="true" interval="3000" duration="1000">
+  <block wx:for="{{thumb_list}}">
+    <swiper-item class="imageBox">
+    <view class='dF idxIBox'>
+      <image class='idxImg' src="{{item}}" mode='aspectFill'></image>
+    </view>
+<!--        <image src="{{item.thumb}}" class="imageBox"/> -->
+    </swiper-item>
+  </block>
+</swiper>
+<!-- technical support  -->
+<view class='dF technicalSupport'>
+  {{banQun}}
+</view>
+
+

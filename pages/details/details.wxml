@@ -1,0 +1,24 @@
+<!--pages/details/details.wxml-->
+<swiper class="swiper" bindtap='show' autoplay="true" interval="3000" duration="1000" indicator-dots indicator-color='rgba(255,255,255,.7)' indicator-active-color='#00C58F'>
+  <block wx:for="{{g_thumb_list}}">
+    <swiper-item class="imageBox">
+      <image class='detI' src="{{item}}" mode='aspectFill'></image>
+<!--        <image src="{{item.thumb}}" class="imageBox"/> -->
+    </swiper-item>
+  </block>
+</swiper>
+<view class='dF bBox'>
+  <view class="sBox dF">
+    <text class="font_14 sBoxT">中文名: </text>
+    <text>{{g_name}}</text>
+  </view>
+  <block wx:for="{{params}}">
+    <view class="sBox dF">
+      <text class="font_14 sBoxT">{{item.param_name}}: </text>
+      <text>{{item.param_value}}</text>
+    </view>
+  </block>
+</view>
+<view>
+  <view class='AStage profile seP'>{{g_detail}}</view>
+</view>
